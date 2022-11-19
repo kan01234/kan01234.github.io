@@ -21,16 +21,16 @@
           <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">&times;</a>
         </li>
         <li>
-          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Home</a>
+          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#home">Home</a>
         </li>
         <li>
-          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Expertise</a>
+          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#expertise">Expertise</a>
         </li>
         <li>
           <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Experience</a>
         </li>
         <li>
-          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Project}</a>
+          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Project</a>
         </li>
         <li>
           <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Contact</a>
@@ -48,44 +48,47 @@
 
   <div class="h-full bg-[url('endless-constellation.svg')]">
 
-    <section id="home">
-      <div class="container mx-auto relative">
-        <img src="icon-brackets.svg" class="w-full h-screen"/>
-          <div class="w-full text-white text-center absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">
-            <h1 class="text-6xl tracking-widest">Ho Kan Leung</h1>
-            <h2 class="text-3xl pt-4 tracking-wider">Software Engineer, Fullstack Developer</h2>
-          </div>
+    <section id="home" class="bg-center bg-no-repeat bg-sc bg-[url('icon-brackets.svg')]">
+      <div class="container mx-auto h-screen">
+        <div class="container text-white text-center absolute inset-x-auto inset-y-1/2">
+          <h1 class="text-6xl tracking-widest">Ho Kan Leung</h1>
+          <h2 class="text-3xl pt-4 tracking-wider">Software Engineer, Fullstack Developer</h2>
+        </div>
       </div>
     </section>
 
-    <div id="expertise" class="text-white text-center">
-      <h1 class="text-4xl p-4">My Expertise</h1>
-      <div>
-        <div class="text-left inline-block border-solid broder-white border-2 w-1/4 h-full">
-          <h3 class="text-2xl font-bont pl-12 pb-4 pt-8">Software Engineering</h3>
-          <ul class="pl-20 list-disc">
-            <li class="pb-4">About 8 years experience in software engineering</li>
-            <li class="pb-4">Experienced in multiple programming language: Java, Kotlin, Python, JavaScript, TypeScript.
-            </li>
-            <li class="pb-4">Advanced in JVM programming language.</li>
-            <li class="pb-4">Friendly with SQL and NoSQL Database: MySQL, Oracle DB, Redis, MongoDB</li>
-            <li class="pb-4"></li>
-            <li class="pb-4">Particapte in every stage of software development life cycle.</li>
-          </ul>
-        </div>
+    <section id="expertise" class="text-white text-center">
+      <div class="container mx-auto">
+        <h1 class="text-4xl p-4">My Expertise</h1>
+        <div>
+          <div class="text-left inline-block border-solid broder-white border-2 w-full lg:w-1/4 h-full">
+            <h3 class="text-2xl font-bont pl-12 pb-4 pt-8">Software Engineering</h3>
+            <ul class="pl-20 list-disc">
+              <li class="pb-4">About 8 years experience in software engineering</li>
+              <li class="pb-4">Experienced in multiple programming language: Java, Kotlin, Python, JavaScript,
+                TypeScript.
+              </li>
+              <li class="pb-4">Advanced in JVM programming language.</li>
+              <li class="pb-4">Friendly with SQL and NoSQL Database: MySQL, Oracle DB, Redis, MongoDB</li>
+              <li class="pb-4"></li>
+              <li class="pb-4">Particapte in every stage of software development life cycle.</li>
+            </ul>
+          </div>
 
-        <div class="text-left inline-block border-solid broder-white border-2 w-1/4 h-full">
-          <h3 class="text-2xl font-bont pl-12 pb-4 pt-8">Software Engineering</h3>
+          <div class="text-left inline-block border-solid broder-white border-2 w-full lg:w-1/4 h-full">
+            <h3 class="text-2xl font-bont pl-12 pb-4 pt-8">Software Engineering</h3>
 
-        </div>
+          </div>
 
-        <div class="text-left inline-block border-solid broder-white border-2 w-1/4 h-full">
-          <h3 class="text-2xl font-bont pl-12 pb-4 pt-8">Software Engineering</h3>
+          <div class="text-left inline-block border-solid broder-white border-2 w-full lg:w-1/4 h-full">
+            <h3 class="text-2xl font-bont pl-12 pb-4 pt-8">Software Engineering</h3>
+
+          </div>
 
         </div>
 
       </div>
-    </div>
+    </section>
   </div>
 
   <script>
