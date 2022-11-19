@@ -9,28 +9,44 @@
 </head>
 
 <body>
-  <header class="w-full h-16 bg-[#440022] drop-shadow-lg">
+  <header class="w-full h-16 bg-[#440022] drop-shadow-lg sticky top-0">
     <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
       <!-- links here -->
-      <ul id="menu" class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
-                md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
-        <li class="md:hidden z-90 fixed top-4 right-6">
-          <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">&times;</a>
+      <ul id="menu" class="hidden md:hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
+        <li class="fixed top-4 right-6">
+          <button class="text-right text-white text-4xl" onclick="toggleMenu()">&times;</button>
         </li>
-        <li>
-          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#home">Home</a>
+        <li class="p-4">
+          <button class="w-full text-left text-white opacity-70 hover:opacity-100 duration-300" onclick="location.href='#home'; toggleMenu();">Home</button>
         </li>
-        <li>
-          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#expertises">Expertises</a>
+        <li class="p-4">
+          <button class="w-full text-left text-white opacity-70 hover:opacity-100 duration-300" onclick="location.href='#expertises'; toggleMenu();">Expertises</botton>
         </li>
-        <li>
-          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#experiences">Experiences</a>
+        <li class="p-4">
+          <button class="w-full text-left text-white opacity-70 hover:opacity-100 duration-300" onclick="location.href='#experiences'; toggleMenu();">Experiences</button>
         </li>
-        <li>
-          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#projects">Projects</a>
+        <li class="p-4">
+          <button class="w-full text-left text-white opacity-70 hover:opacity-100 duration-300" onclick="location.href='#projects'; toggleMenu();">Projects</button>
         </li>
-        <li>
-          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Contact</a>
+        <li class="p-4">
+          <button class="w-full text-left text-white opacity-70 hover:opacity-100 duration-300" onclick="location.href='#contacts'; toggleMenu();">Contacts</button>
+        </li>
+      </ul>
+      <ul id="menu-md" class="hidden md:block fixed top-0 right-0 px-10 py-16 bg-gray-800 md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
+        <li class="p-4">
+          <button class="w-full text-left text-white opacity-70 hover:opacity-100 duration-300" onclick="location.href='#home';">Home</button>
+        </li>
+        <li class="p-4">
+          <button class="w-full text-left text-white opacity-70 hover:opacity-100 duration-300" onclick="location.href='#expertises';">Expertises</botton>
+        </li>
+        <li class="p-4">
+          <button class="w-full text-left text-white opacity-70 hover:opacity-100 duration-300" onclick="location.href='#experiences';">Experiences</button>
+        </li>
+        <li class="p-4">
+          <button class="w-full text-left text-white opacity-70 hover:opacity-100 duration-300" onclick="location.href='#projects';">Projects</button>
+        </li>
+        <li class="p-4">
+          <button class="w-full text-left text-white opacity-70 hover:opacity-100 duration-300" onclick="location.href='#contacts';">Contacts</button>
         </li>
       </ul>
 
@@ -47,14 +63,15 @@
 
     <section id="home" class="bg-center bg-no-repeat bg-[url('icon-brackets.svg')]">
       <div class="container mx-auto h-screen">
-        <div class="container text-white text-center absolute inset-x-auto inset-y-1/2">
+        <div class="container text-white text-center pt-[calc(43vh)]">
           <h1 class="text-6xl tracking-widest">Ho Kan Leung</h1>
           <h2 class="text-3xl pt-4 tracking-wider">Software Engineer, Fullstack Developer</h2>
         </div>
       </div>
     </section>
 
-    <section id="expertises" class="text-white text-center mb-10">
+    <section id="expertises" class="h-16"></section>
+    <section class="text-white text-center mb-10">
       <div class="container mx-auto">
         <h1 class="text-4xl p-4">Expertises</h1>
 
@@ -129,7 +146,8 @@
       </div>
     </section>
 
-    <section id="experiences" class="text-white text-center mb-10">
+    <section id="experiences" class="h-16"></section>
+    <section class="text-white text-center mb-10">
       <div class="container mx-auto">
         <h1 class="text-4xl p-4">Experiences</h1>
 
@@ -303,7 +321,8 @@
       </div>
     </section>8
 
-    <section id="projects" class="text-white text-center mb-10">
+    <section id="projects" class="h-16"></section>
+    <section class="text-white text-center mb-10">
       <div class="container mx-auto">
         <h1 class="text-4xl p-4">Projects</h1>
 
@@ -358,6 +377,12 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="contacts" class="h-16"></section>
+    <section class="text-white text-center mb-10">
+      <div class="container mx-auto">
+        <h1 class="text-4xl p-4">Contacts</h1>
     </section>
   </div>
 
