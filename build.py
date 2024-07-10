@@ -7,7 +7,7 @@ with open("data.json", "r") as file:
   data = json.load(file)
 
 # Create a Template Loader object
-env = Environment(loader=FileSystemLoader('./template'))
+env = Environment(loader=FileSystemLoader(''))
 
 # Load the template
 template = env.get_template('index.html.template')

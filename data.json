@@ -1,3 +1,18 @@
 {
-    
+    "name": "Ho Kan Leung",
+    "title": "Senior Backend Engineer",
+    "navs": [
+        { "key": "aboutme", "title": "About Me", "active": true },
+        { "key": "exp", "title": "Experiences" },
+        { "key": "skill", "title": "Skill" }
+    ],
+    "sections": [
+        {
+            "key": "aboutme",
+            "style": "intro",
+            "title": "Delivering Scalable Solutions: My 8+ Years in Backend Development ",
+            "body": "Building backend magic for 8+ years! I leverage my Java, Spring Boot, and Cloud Native expertise to craft efficient microservices and APIs. Proven leader passionate about fostering collaborative, high-performing teams. Fluent in English, Japanese, Mandarin, and Cantonese for seamless communication across borders.",
+            "image": "avatar.png"
+        }
+    ]
 }
