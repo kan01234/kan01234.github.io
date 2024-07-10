@@ -7,10 +7,10 @@ with open("data.json", "r") as file:
   data = json.load(file)
 
 # Create a Template Loader object
-env = Environment(loader=FileSystemLoader(''))
+env = Environment(loader=FileSystemLoader('template'))
 
 # Load the template
-template = env.get_template('index.html.template')
+template = env.get_template('index.j2')
 
 # Render the template with data
 html_content = template.render(data=data)

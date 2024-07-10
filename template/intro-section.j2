@@ -1,0 +1,18 @@
+{% macro intro_section(intro) %}
+<section id="{{ intro.key }}" class="main">
+    <div class="spotlight">
+        <div class="content">
+            <header class="major">
+                <h2>{{ intro.title }}</h2>
+            </header>
+            <p>{{ intro.body }}</p>
+            {% if intro.link %}
+            <ul class="actions">
+                <li><a href="generic.html" class="button">Learn More</a></li>
+            </ul>
+            {% endif %}
+        </div>
+        <span class="image"><img src="assets/image/{{ intro.image }}" alt="" /></span>
+    </div>
+</section>
+{% endmacro %}

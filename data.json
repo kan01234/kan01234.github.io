@@ -2,17 +2,45 @@
     "name": "Ho Kan Leung",
     "title": "Senior Backend Engineer",
     "navs": [
-        { "key": "aboutme", "title": "About Me", "active": true },
-        { "key": "exp", "title": "Experiences" },
-        { "key": "skill", "title": "Skill" }
-    ],
-    "sections": [
         {
-            "key": "aboutme",
-            "style": "intro",
-            "title": "Delivering Scalable Solutions: My 8+ Years in Backend Development ",
-            "body": "Building backend magic for 8+ years! I leverage my Java, Spring Boot, and Cloud Native expertise to craft efficient microservices and APIs. Proven leader passionate about fostering collaborative, high-performing teams. Fluent in English, Japanese, Mandarin, and Cantonese for seamless communication across borders.",
-            "image": "avatar.png"
+            "key": "intro",
+            "title": "About Me",
+            "active": true
+        },
+        {
+            "key": "skill",
+            "title": "Skill"
+        },
+        {
+            "key": "exp",
+            "title": "Experiences"
         }
-    ]
+    ],
+    "intro": {
+        "key": "intro",
+        "style": "intro",
+        "title": "Delivering Scalable Solutions: My 8+ Years in Backend Development ",
+        "body": "Building backend magic for 8+ years! I leverage my Java, Spring Boot, and Cloud Native expertise to craft efficient microservices and APIs. Proven leader passionate about fostering collaborative, high-performing teams. Fluent in English, Japanese, Mandarin, and Cantonese for seamless communication across borders.",
+        "image": "avatar.png"
+    },
+    "skill": {
+        "key": "skill",
+        "title": "My Expertise",
+        "list": [
+            {
+                "icon": "solid fa-terminal",
+                "value": "Coding",
+                "label": "Experienced Java & Kotlin developer (8+ & 3+ yrs) comfortable with both OOP & functional paradigms, with scripting abilities in Bash and Python."
+            },
+            {
+                "icon": "",
+                "value": "aaa",
+                "label": "bbb"
+            }
+        ]
+    },
+    "exp": {
+        "key": "exp",
+        "title": "Professional Experience"
+    }
 }
