@@ -1,6 +1,23 @@
 {
     "name": "Ho Kan Leung",
     "title": "Senior Backend Engineer",
+    "contact": {
+        "title": "Contacts",
+        "address": "Tokyo, Japan",
+        "email": "kanleung789@gmail.com",
+        "others": [
+            {
+                "link": "https://github.com/kan01234/",
+                "icon": "fa-github",
+                "text": "github"
+            },
+            {
+                "link": "https://www.linkedin.com/in/ho-kan-leung-132503109/",
+                "icon": "fa-linkedin",
+                "text": "linkedin"
+            }
+        ]
+    },
     "navs": [
         {
             "key": "intro",
@@ -9,11 +26,11 @@
         },
         {
             "key": "skill",
-            "title": "Skill"
+            "title": "My Expertise"
         },
         {
             "key": "exp",
-            "title": "Experiences"
+            "title": "Professional Experience"
         }
     ],
     "intro": {
@@ -50,6 +67,8 @@
         "list": [
             {
                 "title": "Rakuten Group, Inc., Japan | Software Engineer | March 2021 - Present",
+                "description": "Spearheaded the development of their point grant and redemption service utilizing Kotlin, Spring framework, and microservice architecture.",
+                "link": "https://pointonline.rakuten.co.jp/service/",
                 "projects": [
                     {
                         "title": "Cloud-Native Migration with Kubernetes:",
@@ -100,9 +119,11 @@
             },
             {
                 "title": "Persol Technology Staff Co., Ltd., Japan | Software Engineer | March 2020 - February 2021",
+                "description": "Maintained peak performance for the Toyota Connected Platform (AWS) by leveraging Java, Python, and AWS expertise. Facilitated smooth internal team communication through strong language skills.",
+                "link": "https://toyotaconnected.co.jp/en/service/connectedplatform.html",
                 "projects": [
                     {
-                        "title": "Toyota Connected Platform (AWS) Automation",
+                        "title": "Data Registeration Automation",
                         "challenge": "Automate daily operations for the Toyota Connected Platform (AWS).",
                         "role": "Spearheaded the automation of daily operations for the Toyota Connected Platform (AWS)",
                         "impact": "Achieved a 90% reduction in data processing time, significantly improving platform efficiency.",
@@ -113,7 +134,7 @@
                         ]
                     },
                     {
-                        "title": "Toyota Connected Platform Health Monitoring System",
+                        "title": "Health Monitoring System",
                         "challenge": "Develop a system health monitoring system for the Toyota Connected Platform.",
                         "role": "Developed a system health monitoring system, enabling real-time insights and proactive maintenance.",
                         "impact": "Provided real-time insights and enabled proactive maintenance.",
@@ -123,6 +144,19 @@
                         ]
                     }
                 ]
+            },
+            {
+                "title": "Infinite Financial Solutions Ltd, Hong Kong | Analyst Programmer | February 2018 - January 2020",
+                "description": "Utilized my Java and Spring expertise, delivered IT solutions tailored for the financial industry. This included actively participating in the Faster Payment System (FPS) project launched by the Hong Kong Monetary Authority (HKMA).",
+                "link": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/financial-market-infrastructure/faster-payment-system-fps/"
+            },
+            {
+                "title": "Wintech Network Technology Co., Limited | Analyst Programmer | August 2017 - December 2017 | (Company closure)",
+                "description": "Thrived in a fast-paced startup environment, contributing to the development of secure and user-friendly e-wallet applications."
+            },
+            {
+                "title": "Hong Kong Economic Times Limited | Developer | November 2015 - July 2017",
+                "description": "Began my career at a prominent Hong Kong financial news media company, gaining experience across the entire software development lifecycle"
             }
         ]
     }

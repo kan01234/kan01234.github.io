@@ -5,41 +5,13 @@
     </header>
 
     {% for item in exp.list %}
-        <div class="major">
-            <h2>{{ item.title }}</h2>
-            {% for project in item.projects %}
-                <div>
-                    <h3><i class="fa-solid fa-list-check"></i> {{ project.title }}</h3>
-                    <ul class="features">
-                        <li>
-                            <h4><i class="icon solid style5 fa-flag"></i> Challenge</h4>
-                            <p>{{ project.challenge }}</p>
-                        </li>
-                        <li>
-                            <h4><i class="icon solid style3 fa-gears"></i> Role</h4>
-                            <p>{{ project.role }}</p>
-                        </li>
-                        <li>
-                            <h4><i class="icon solid style1 fa-square-poll-vertical"></i> Impact</h4>
-                            <p>{{ project.impact }}</p>
-                        </li>
-                    </ul>
-                    <ul class="statistics">
-                        {% for skill in project.skills %}
-                            <li class="style{{ loop.index % 5 + 1 }}">{{ skill }}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <hr>
-            {% endfor %}
+        <div class="card">
+            <h3><i class="fa-regular fa-building"></i> {{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+            {% if item.link %}
+                <a href="{{ item.link }}" class="button">Learn More</a>
+            {% endif %}
         </div>
     {% endfor %}
-    <footer class="major">
-        {% if exp.link %}
-        <ul class="actions special">
-            <li><a href="generic.html" class="button">Learn More</a></li>
-        </ul>
-        {% endif %}
-    </footer>
 </section>
 {% endmacro %}
