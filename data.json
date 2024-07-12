@@ -19,7 +19,7 @@
     "intro": {
         "key": "intro",
         "style": "intro",
-        "title": "Delivering Scalable Solutions: My 8+ Years in Backend Development ",
+        "title": "Backend Engineer: Building Scalable & Reliable Backend Systems",
         "body": "Building backend magic for 8+ years! I leverage my Java, Spring Boot, and Cloud Native expertise to craft efficient microservices and APIs. Proven leader passionate about fostering collaborative, high-performing teams. Fluent in English, Japanese, Mandarin, and Cantonese for seamless communication across borders.",
         "image": "avatar.png"
     },
@@ -28,19 +28,102 @@
         "title": "My Expertise",
         "list": [
             {
-                "icon": "solid fa-terminal",
+                "icon": "fa-terminal",
                 "value": "Coding",
-                "label": "Experienced Java & Kotlin developer (8+ & 3+ yrs) comfortable with both OOP & functional paradigms, with scripting abilities in Bash and Python."
+                "label": "Experienced Java & Kotlin developer (8+ & 3+ yrs) with expertise in Spring Framework (Boot, Cloud) and a strong grasp of OOP & functional programming for efficient solutions."
             },
             {
-                "icon": "",
-                "value": "aaa",
-                "label": "bbb"
+                "icon": "fa-database",
+                "value": "Data Managment",
+                "label": "Skilled in both relational and NoSQL databases, ensuring data consistency through transactions and locking mechanisms. Leverage message queues / Kafka to facilitate decoupled communication within microservice architectures."
+            },
+            {
+                "icon": "fa-server",
+                "value": "Modern Infrastructure Expertise",
+                "label": "Leverage Docker for containerized application development, manage large-scale deployments with Kubernetes, and automate infrastructure with Ansible for efficient, scalable, and repeatable solutions."
             }
         ]
     },
     "exp": {
         "key": "exp",
-        "title": "Professional Experience"
+        "title": "Professional Experience",
+        "list": [
+            {
+                "title": "Rakuten Group, Inc., Japan | Software Engineer | March 2021 - Present",
+                "projects": [
+                    {
+                        "title": "Cloud-Native Migration with Kubernetes:",
+                        "challenge": "Modernized a critical application by migrating it from a VM environment to a Kubernetes-based CaaS platform.",
+                        "role": "Led the evaluation, planning, and execution of the migration process.",
+                        "impact": "Achieved cost optimization, improved scalability, and resource utilization, while aligning infrastructure with best practices. Additionally, significantly reduced End-of-Life (EOL) operational costs.",
+                        "skills": [
+                            "Kubernetes",
+                            "Docker",
+                            "Private Cloud"
+                        ]
+                    },
+                    {
+                        "title": "Secure Database Migration (MySQL to MariaDB):",
+                        "challenge": "Migrated a critical database from MySQL 5.7 to MariaDB, prioritizing security and minimal downtime.",
+                        "role": "Orchestrated the planning and execution, selecting the optimal migration strategy to ensure data integrity and seamless transition.",
+                        "impact": "Maintained high availability and data security during the migration, minimizing user impact.",
+                        "skills": [
+                            "MySQL",
+                            "MariaDB"
+                        ]
+                    },
+                    {
+                        "title": "Real-Time API Data Consistency (Point Redemption):",
+                        "challenge": "Addressed data inconsistency issues within the real-time point redemption API.",
+                        "role": "Led the architectural design and implementation of a solution to address data consistency issues within the real-time point redemption API",
+                        "solution": "Designed and implemented pessimistic locking to prevent race conditions.",
+                        "impact": "Significantly improved user experience by ensuring data consistency during point redemptions, leading to a noticeable decrease in customer support tickets related to point redemption issues.",
+                        "skills": [
+                            "Kotlin",
+                            "Spring Boot",
+                            "Kafka",
+                            "MySQL"
+                        ]
+                    },
+                    {
+                        "title": "Mentorship and Knowledge Sharing (Log Management System):",
+                        "challenge": "Coached a junior team member on the evaluation and migration of the log management system from ELK Stack to Datadog.",
+                        "role": "Provided guidance on Datadog's functionalities and best practices, fostering knowledge sharing and understanding of modern log management solutions.",
+                        "impact": "Empowered junior team member to effectively evaluate and migrate the log management system.",
+                        "skills": [
+                            "ELK Stack",
+                            "Datadog",
+                            "Mentorship"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Persol Technology Staff Co., Ltd., Japan | Software Engineer | March 2020 - February 2021",
+                "projects": [
+                    {
+                        "title": "Toyota Connected Platform (AWS) Automation",
+                        "challenge": "Automate daily operations for the Toyota Connected Platform (AWS).",
+                        "role": "Spearheaded the automation of daily operations for the Toyota Connected Platform (AWS)",
+                        "impact": "Achieved a 90% reduction in data processing time, significantly improving platform efficiency.",
+                        "skills": [
+                            "AWS Lambda",
+                            "AWS S3",
+                            "AWS SQS"
+                        ]
+                    },
+                    {
+                        "title": "Toyota Connected Platform Health Monitoring System",
+                        "challenge": "Develop a system health monitoring system for the Toyota Connected Platform.",
+                        "role": "Developed a system health monitoring system, enabling real-time insights and proactive maintenance.",
+                        "impact": "Provided real-time insights and enabled proactive maintenance.",
+                        "skills": [
+                            "AWS Lambda",
+                            "Datadog"
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 }

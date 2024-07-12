@@ -1,27 +1,45 @@
-<section id="{{ item.key }}" class="main special">
+{% macro exp_section(exp) %}
+<section id="{{ exp.key }}" class="main special">
     <header class="major">
-        <h2>{{ item.title }}</h2>
+        <h2>{{ exp.title }}</h2>
     </header>
-    <ul class="features">
-        <li>
-            <span class="icon solid major style1 fa-code"></span>
-            <h3>Ipsum consequat</h3>
-            <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-        </li>
-        <li>
-            <span class="icon major style3 fa-copy"></span>
-            <h3>Amed sed feugiat</h3>
-            <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-        </li>
-        <li>
-            <span class="icon major style5 fa-gem"></span>
-            <h3>Dolor nullam</h3>
-            <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-        </li>
-    </ul>
+
+    {% for item in exp.list %}
+        <div class="major">
+            <h2>{{ item.title }}</h2>
+            {% for project in item.projects %}
+                <div>
+                    <h3><i class="fa-solid fa-list-check"></i> {{ project.title }}</h3>
+                    <ul class="features">
+                        <li>
+                            <h4><i class="icon solid style5 fa-flag"></i> Challenge</h4>
+                            <p>{{ project.challenge }}</p>
+                        </li>
+                        <li>
+                            <h4><i class="icon solid style3 fa-gears"></i> Role</h4>
+                            <p>{{ project.role }}</p>
+                        </li>
+                        <li>
+                            <h4><i class="icon solid style1 fa-square-poll-vertical"></i> Impact</h4>
+                            <p>{{ project.impact }}</p>
+                        </li>
+                    </ul>
+                    <ul class="statistics">
+                        {% for skill in project.skills %}
+                            <li class="style{{ loop.index % 5 + 1 }}">{{ skill }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <hr>
+            {% endfor %}
+        </div>
+    {% endfor %}
     <footer class="major">
+        {% if exp.link %}
         <ul class="actions special">
             <li><a href="generic.html" class="button">Learn More</a></li>
         </ul>
+        {% endif %}
     </footer>
 </section>
+{% endmacro %}
