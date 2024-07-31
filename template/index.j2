@@ -31,7 +31,7 @@
 							{% for item in data.navs %}
 							<li>
 								{% if item.url %}
-								<a href="{{ item.url }}" {% if item.active %}class="active"{% endif %}>{{ item.title }}</a>
+								<a href="{{ item.url }}" target="_blank" {% if item.active %}class="active"{% endif %}>{{ item.title }}</a>
 								{% else %}
 								<a href="#{{ item.key }}" {% if item.active %}class="active"{% endif %}>{{ item.title }}</a>
 								{% endif %}
